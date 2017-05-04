@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login - SSL Monitoring</title>
+  
+  
+  
+      <link rel="stylesheet" href="/public/login/css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="login-page">
+  <div class="form">
+    <form class="register-form" action="/register" method="POST">
+      <input type="text" placeholder="Name" name="name"/>
+      <input type="text" placeholder="Company Name" name="company"/>
+      <input type="text" placeholder="Contact Number" name="contact"/>
+      <input type="text" placeholder="E-mail address" name="email"/>
+      <input type="password" placeholder="Password" name="password"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form" method="POST" action="/login">
+      <input type="text" placeholder="E-mail" name="username"/>
+      <input type="password" placeholder="Password" name="password"/>
+      <button>login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js'></script>
+
+  <script src="/public/login/js/index.js"></script>
+
+</body>
+</html>

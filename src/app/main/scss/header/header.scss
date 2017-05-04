@@ -1,0 +1,44 @@
+
+
+$headerBgColor: #0e2f44;
+$headerTextColor: #fff;
+
+.mainHeaderContainer {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0px;
+    height: 40px;
+    margin: 0px;
+    background-color: $headerBgColor;
+    color: $headerTextColor;
+}
+
+.mainHeaderlayout {
+    padding: 9px 0px 0px 0px;
+    margin: 0px;
+}
+
+.mainHeaderTools {
+    float: right;
+    margin: 0;
+    padding: 0;
+
+    > li {
+        float: left;
+        list-style: none;
+    }
+
+    > li a {
+        text-decoration: none;
+        color: $headerTextColor;
+        cursor: pointer;
+        padding: 10px 20px;
+        border: 1px solid #d3d3d3;
+    }
+
+    > li a:hover {
+        color: #d3d3d3;
+        background-color: green;
+    }
+}
